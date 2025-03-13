@@ -81,8 +81,8 @@
         const canvasCache = {};
         const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
         const basePath = window.location.pathname.replace(/[^/]*$/, '');
-        const imageBasePath = isLocal ? `${basePath}images/${category.charAt(0).toUpperCase() + category.slice(1)}/` : `/images/${category.charAt(0).toUpperCase() + category.slice(1)}/`;
-        const presetImages = Array.from({ length: 9 }, (_, i) => `${imageBasePath}blessing${i + 1}.jpg`); // Fixed to lowercase 'blessing'
+        const imageBasePath = isLocal ? `${basePath}images/blessing/` : `/images/blessing/`; // 修正为实际文件夹名
+        const presetImages = Array.from({ length: 9 }, (_, i) => `${imageBasePath}blessing${i + 1}.jpg`); // 修正为无连字符文件名
         let usedImages = [];
         let currentImage = null;
         let isPortrait = true;

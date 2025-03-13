@@ -101,9 +101,8 @@
     const canvasCache = {};
     const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
     const basePath = window.location.pathname.replace(/[^/]*$/, '');
-    const imageBasePath = isLocal ? `${basePath}images/${category.charAt(0).toUpperCase() + category.slice(1)}/` : `/images/${category.charAt(0).toUpperCase() + category.slice(1)}/`;
-    // 手动指定 Healing 文件夹中的图片数量（7 张）
-    const presetImages = Array.from({ length: 7 }, (_, i) => `${imageBasePath}healing${i + 1}.jpg`);
+    const imageBasePath = isLocal ? `${basePath}images/healing/` : `/images/healing/`; // 修正为实际文件夹名
+    const presetImages = Array.from({ length: 7 }, (_, i) => `${imageBasePath}healing${i + 1}.jpg`); // 修正为无连字符文件名
     let usedImages = [];
     let currentImage = null;
     let isPortrait = true;
