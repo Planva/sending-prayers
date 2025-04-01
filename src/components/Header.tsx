@@ -8,15 +8,11 @@ const Header: React.FC = () => {
 
   const navigation = [
     { name: 'Home', path: '/' },
-    { name: 'Prayer Generator', path: '/prayer-generator' },
-    { name: 'Gallery', path: '/gallery' },
-    { name: 'Quotes', path: '/quotes' },
-    { name: 'Alternatives', path: '/alternatives' },
+    { name: 'Create Prayer Messages', path: '/create-prayer-messages' },
+    { name: 'Prayer Images', path: '/sending-prayers-images' },
+    { name: 'Prayer Quotes', path: '/inspirational-prayer-quotes' },
+    { name: 'Alternative Messages', path: '/alternative-prayer-messages' },
   ];
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
 
   return (
     <header className="bg-gradient-to-r from-purple-600 to-blue-600 text-white" role="banner">
@@ -48,14 +44,16 @@ const Header: React.FC = () => {
           </nav>
 
           {/* Desktop Search */}
-          <div className="hidden md:block relative">
-            <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" aria-hidden="true" />
-            <input
-              type="text"
-              placeholder="Search prayers..."
-              aria-label="Search prayers"
-              className="pl-10 pr-4 py-2 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
-            />
+          <div className="hidden md:flex items-center space-x-4">
+            <div className="relative">
+              <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" aria-hidden="true" />
+              <input
+                type="text"
+                placeholder="Search prayers..."
+                aria-label="Search prayers"
+                className="pl-10 pr-4 py-2 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/60 focus:outline-none focus:ring-2 focus:ring-white/50"
+              />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -64,7 +62,7 @@ const Header: React.FC = () => {
             className="md:hidden inline-flex items-center justify-center p-2 rounded-md text-white hover:text-white/80 hover:bg-purple-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
             aria-controls="mobile-menu"
             aria-expanded={isMenuOpen}
-            onClick={toggleMenu}
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <span className="sr-only">Open main menu</span>
             {isMenuOpen ? (

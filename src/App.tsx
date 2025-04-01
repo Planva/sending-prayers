@@ -16,10 +16,10 @@ function App() {
         <main className="max-w-7xl mx-auto py-6 sm:py-12 px-4 sm:px-6 lg:px-8 overflow-hidden">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/prayer-generator" element={<PrayerGeneratorPage />} />
-            <Route path="/gallery" element={<GalleryPage />} />
-            <Route path="/quotes" element={<QuotesPage />} />
-            <Route path="/alternatives" element={<AlternativesPage />} />
+            <Route path="/create-prayer-messages" element={<PrayerGeneratorPage />} />
+            <Route path="/sending-prayers-images" element={<GalleryPage />} />
+            <Route path="/inspirational-prayer-quotes" element={<QuotesPage />} />
+            <Route path="/alternative-prayer-messages" element={<AlternativesPage />} />
           </Routes>
         </main>
 
