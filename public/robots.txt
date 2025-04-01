@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sending-prayers.com/sitemap.xml
+Sitemap: https://www.sending-prayers.com/sitemap.xml
