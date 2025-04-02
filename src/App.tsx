@@ -44,6 +44,14 @@ function App() {
                     TAT Test
                   </a>
                   <a 
+                    href="https://www.difficult-person-test.com" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    difficult person test
+                  </a>
+                  <a 
                     href="https://www.calculator-app.org" 
                     target="_blank" 
                     rel="noopener noreferrer"
