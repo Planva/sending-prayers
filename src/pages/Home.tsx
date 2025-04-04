@@ -16,7 +16,7 @@ const Home: React.FC = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <Link
-          to="/prayer-generator"
+          to="/create-prayer-messages"
           className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
           aria-label="Create personalized prayers with our Prayer Generator"
         >
@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         </Link>
 
         <Link
-          to="/gallery"
+          to="/sending-prayers-images"
           className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
           aria-label="Browse our inspiring gallery of prayer images"
         >
@@ -36,7 +36,7 @@ const Home: React.FC = () => {
         </Link>
 
         <Link
-          to="/quotes"
+          to="/inspirational-prayer-quotes"
           className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
           aria-label="Find inspirational quotes for every moment"
         >
