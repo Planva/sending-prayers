@@ -46,7 +46,7 @@ const Home: React.FC = () => {
         </Link>
 
         <Link
-          to="/alternatives"
+          to="/alternative-prayer-messages"
           className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
           aria-label="Discover alternative ways to express your support"
         >
