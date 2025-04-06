@@ -49,7 +49,7 @@ function App() {
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
                   >
-                    Thumbnail Tester
+                    Difficult Person Test
                   </a>
                   <a 
                     href="https://www.thumbnail-tester.com" 
@@ -57,8 +57,9 @@ function App() {
                     rel="noopener noreferrer"
                     className="hover:text-white transition-colors"
                   >
-                    Calculator App
-                    <a 
+                    Thumbnail Tester
+                  </a>
+                  <a 
                     href="https://www.calculator-app.org" 
                     target="_blank" 
                     rel="noopener noreferrer"
