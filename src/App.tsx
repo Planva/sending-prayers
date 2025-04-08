@@ -52,6 +52,14 @@ function App() {
                     Difficult Person Test
                   </a>
                   <a 
+                    href="https://www.smarttest.cc/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    Smart IQ Test
+                  </a>
+                  <a 
                     href="https://www.thumbnail-tester.com" 
                     target="_blank" 
                     rel="noopener noreferrer"
