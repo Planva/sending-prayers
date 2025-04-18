@@ -75,6 +75,14 @@ function App() {
                   >
                     Calculator App
                   </a>
+                  <a 
+                    href="https://www.future-value-calculator.com/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    Future Value Calculator
+                  </a>
                 </div>
               </div>
             </div>
